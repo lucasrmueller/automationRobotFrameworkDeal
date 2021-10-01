@@ -1,0 +1,7 @@
+keyboard==0.13.5
+clipboard==0.0.4
+robotframework>=3.2.2
+robotframework-faker>=5.0.0
+robotframework-requests>=0.7.1
+robotframework-seleniumlibrary>=4.5.0
+robotframework-debuglibrary>=2.2.1
