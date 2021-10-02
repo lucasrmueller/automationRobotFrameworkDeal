@@ -1,148 +1,190 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.1 (Python 3.9.7 on win32)" generated="20210930 23:27:16.263" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.1 (Python 3.9.7 on win32)" generated="20211002 15:37:05.234" rpa="false" schemaversion="2">
 <suite id="s1" name="TesteExemploDeal" source="D:\Projetos\Robot Framework\automationRobotFrameworkDeal\Tests\TesteExemploDeal.robot">
-<test id="s1-t1" name="Teste 001 - Validar pagina da Deal esta aberta">
+<test id="s1-t1" name="Teste 003 - Fazer buscas no site Google">
 <kw name="Abrir Navegador" library="Comum" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20210930 23:27:16.937" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20210930 23:27:16.937" endtime="20210930 23:27:18.349"/>
+<msg timestamp="20211002 15:37:05.901" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20211002 15:37:05.901" endtime="20211002 15:37:07.034"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20210930 23:27:18.350" endtime="20210930 23:27:18.478"/>
+<status status="PASS" starttime="20211002 15:37:07.035" endtime="20211002 15:37:07.154"/>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>https://www.deal.com.br/</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20210930 23:27:18.479" level="INFO">Opening url 'https://www.deal.com.br/'</msg>
-<status status="PASS" starttime="20210930 23:27:18.479" endtime="20210930 23:27:24.459"/>
+<msg timestamp="20211002 15:37:07.154" level="INFO">Opening url 'https://www.deal.com.br/'</msg>
+<status status="PASS" starttime="20211002 15:37:07.154" endtime="20211002 15:37:12.315"/>
 </kw>
-<status status="PASS" starttime="20210930 23:27:16.936" endtime="20210930 23:27:24.459"/>
+<status status="PASS" starttime="20211002 15:37:05.900" endtime="20211002 15:37:12.315"/>
 </kw>
 <kw name="Dado" library="BDDpt-BR">
-<arg>Usuário acessou a pagina pela url</arg>
+<arg>Usuário acessou a pagina do google</arg>
 <kw name="Run Keyword" library="BuiltIn">
 <arg>@{keyword}</arg>
 <doc>Executes the given keyword with the given arguments.</doc>
-<kw name="Usuário acessou a pagina pela url" library="Resource">
-<kw name="Verificar Página Deal Home" library="TelaHomeSiteDeal">
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>${ICONE_DEAL_HOME}</arg>
-<arg>timeout=${TIMEOUT}</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20210930 23:27:24.461" endtime="20210930 23:27:24.477"/>
-</kw>
-<status status="PASS" starttime="20210930 23:27:24.461" endtime="20210930 23:27:24.477"/>
-</kw>
-<status status="PASS" starttime="20210930 23:27:24.460" endtime="20210930 23:27:24.477"/>
-</kw>
-<status status="PASS" starttime="20210930 23:27:24.460" endtime="20210930 23:27:24.477"/>
-</kw>
-<status status="PASS" starttime="20210930 23:27:24.460" endtime="20210930 23:27:24.478"/>
-</kw>
-<kw name="Fechar Navegador" library="Comum" type="TEARDOWN">
-<kw name="Close All Browsers" library="SeleniumLibrary">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20210930 23:27:24.479" endtime="20210930 23:27:27.149"/>
-</kw>
-<status status="PASS" starttime="20210930 23:27:24.478" endtime="20210930 23:27:27.149"/>
-</kw>
-<doc>Deal - T001: Validar pagina da Deal esta aberta</doc>
-<status status="PASS" starttime="20210930 23:27:16.935" endtime="20210930 23:27:27.150"/>
-</test>
-<test id="s1-t2" name="Teste 002 - Validar menus superiores da tela Home">
-<kw name="Abrir Navegador" library="Comum" type="SETUP">
+<kw name="Usuário acessou a pagina do google" library="Resource">
+<kw name="Abrir site do Google" library="Comum">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20210930 23:27:27.154" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20210930 23:27:27.153" endtime="20210930 23:27:28.496"/>
+<msg timestamp="20211002 15:37:12.319" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20211002 15:37:12.318" endtime="20211002 15:37:13.478"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20210930 23:27:28.496" endtime="20210930 23:27:28.632"/>
+<status status="PASS" starttime="20211002 15:37:13.478" endtime="20211002 15:37:13.599"/>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
-<arg>https://www.deal.com.br/</arg>
+<arg>https://www.google.com.br/</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20210930 23:27:28.632" level="INFO">Opening url 'https://www.deal.com.br/'</msg>
-<status status="PASS" starttime="20210930 23:27:28.632" endtime="20210930 23:27:39.179"/>
+<msg timestamp="20211002 15:37:13.599" level="INFO">Opening url 'https://www.google.com.br/'</msg>
+<status status="PASS" starttime="20211002 15:37:13.599" endtime="20211002 15:37:14.438"/>
 </kw>
-<status status="PASS" starttime="20210930 23:27:27.152" endtime="20210930 23:27:39.180"/>
+<status status="PASS" starttime="20211002 15:37:12.318" endtime="20211002 15:37:14.439"/>
 </kw>
-<kw name="Dado" library="BDDpt-BR">
-<arg>Usuário acessou a pagina pela url</arg>
-<kw name="Run Keyword" library="BuiltIn">
-<arg>@{keyword}</arg>
-<doc>Executes the given keyword with the given arguments.</doc>
-<kw name="Usuário acessou a pagina pela url" library="Resource">
-<kw name="Verificar Página Deal Home" library="TelaHomeSiteDeal">
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>${ICONE_DEAL_HOME}</arg>
-<arg>timeout=${TIMEOUT}</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20210930 23:27:39.184" endtime="20210930 23:27:39.200"/>
+<status status="PASS" starttime="20211002 15:37:12.317" endtime="20211002 15:37:14.439"/>
 </kw>
-<status status="PASS" starttime="20210930 23:27:39.184" endtime="20210930 23:27:39.200"/>
+<status status="PASS" starttime="20211002 15:37:12.317" endtime="20211002 15:37:14.439"/>
 </kw>
-<status status="PASS" starttime="20210930 23:27:39.183" endtime="20210930 23:27:39.201"/>
-</kw>
-<status status="PASS" starttime="20210930 23:27:39.182" endtime="20210930 23:27:39.201"/>
-</kw>
-<status status="PASS" starttime="20210930 23:27:39.181" endtime="20210930 23:27:39.201"/>
+<status status="PASS" starttime="20211002 15:37:12.316" endtime="20211002 15:37:14.439"/>
 </kw>
 <kw name="E" library="BDDpt-BR">
-<arg>Clicou no menu Nossas Entregas</arg>
+<arg>Inseriu no campo de busca</arg>
+<arg>${Valor_Busca}</arg>
 <kw name="Run Keyword" library="BuiltIn">
 <arg>@{keyword}</arg>
 <doc>Executes the given keyword with the given arguments.</doc>
-<kw name="Clicou no menu Nossas Entregas" library="Resource">
-<kw name="Clicar no menu Nossas Entregas" library="TelaHomeSiteDeal">
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${MENU_NOSSAS_ENTREGAS}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210930 23:27:39.203" endtime="20210930 23:27:39.229"/>
+<kw name="Inseriu no campo de busca" library="Resource">
+<arg>"Deal - Convergência de Dados e Estratégias Digitais para ..."</arg>
+<kw name="Inserir no campo de busca" library="Google">
+<arg>${arg1}</arg>
+<kw name="Set Focus To Element" library="SeleniumLibrary">
+<arg>${INPUT_BUSCA}</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" starttime="20211002 15:37:14.444" endtime="20211002 15:37:14.472"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${INPUT_BUSCA}</arg>
+<arg>${arg1}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211002 15:37:14.473" level="INFO">Typing text '"Deal - Convergência de Dados e Estratégias Digitais para ..."' into text field 'xpath:/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input'.</msg>
+<status status="PASS" starttime="20211002 15:37:14.472" endtime="20211002 15:37:14.738"/>
+</kw>
+<status status="PASS" starttime="20211002 15:37:14.443" endtime="20211002 15:37:14.738"/>
+</kw>
+<status status="PASS" starttime="20211002 15:37:14.442" endtime="20211002 15:37:14.738"/>
+</kw>
+<status status="PASS" starttime="20211002 15:37:14.441" endtime="20211002 15:37:14.738"/>
+</kw>
+<status status="PASS" starttime="20211002 15:37:14.440" endtime="20211002 15:37:14.739"/>
+</kw>
+<kw name="Quando" library="BDDpt-BR">
+<arg>Clicou no botão de pesquisa google</arg>
+<kw name="Run Keyword" library="BuiltIn">
+<arg>@{keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="Clicou no botão de pesquisa google" library="Resource">
+<kw name="Clicar no botão &quot;Pesquisa Google&quot;" library="Google">
+<kw name="Set Focus To Element" library="SeleniumLibrary">
+<arg>${BUTTON_PESQUISA_GOOGLE}</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" starttime="20211002 15:37:14.743" endtime="20211002 15:37:14.770"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>${MENU_NOSSAS_ENTREGAS}</arg>
+<arg>${BUTTON_PESQUISA_GOOGLE}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210930 23:27:39.229" level="INFO">Clicking element 'xpath://*[@id="menu-1-f4a8485"]/li[2]/a[contains(., 'Nossas Entregas')]'.</msg>
-<status status="PASS" starttime="20210930 23:27:39.229" endtime="20210930 23:27:42.483"/>
+<msg timestamp="20211002 15:37:14.771" level="INFO">Clicking element 'xpath:/html/body/div[1]/div[3]/form/div[1]/div[1]/div[3]/center/input[1]'.</msg>
+<status status="PASS" starttime="20211002 15:37:14.770" endtime="20211002 15:37:16.444"/>
 </kw>
-<status status="PASS" starttime="20210930 23:27:39.202" endtime="20210930 23:27:42.483"/>
+<status status="PASS" starttime="20211002 15:37:14.741" endtime="20211002 15:37:16.444"/>
 </kw>
-<status status="PASS" starttime="20210930 23:27:39.202" endtime="20210930 23:27:42.483"/>
+<status status="PASS" starttime="20211002 15:37:14.741" endtime="20211002 15:37:16.444"/>
 </kw>
-<status status="PASS" starttime="20210930 23:27:39.202" endtime="20210930 23:27:42.483"/>
+<status status="PASS" starttime="20211002 15:37:14.740" endtime="20211002 15:37:16.444"/>
 </kw>
-<status status="PASS" starttime="20210930 23:27:39.202" endtime="20210930 23:27:42.483"/>
+<status status="PASS" starttime="20211002 15:37:14.739" endtime="20211002 15:37:16.445"/>
 </kw>
-<kw name="Fechar Navegador" library="Comum" type="TEARDOWN">
-<kw name="Close All Browsers" library="SeleniumLibrary">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20210930 23:27:42.485" endtime="20210930 23:27:44.919"/>
+<kw name="Então" library="BDDpt-BR">
+<arg>Apresenta a tela de resultado da Pesquisa</arg>
+<kw name="Run Keyword" library="BuiltIn">
+<arg>@{keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="Apresenta a tela de resultado da Pesquisa" library="Resource">
+<kw name="Verificar Página de resultado" library="Google">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${PRIMEIRO_RESULTADO}</arg>
+<arg>timeout=${TIMEOUT}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211002 15:37:16.448" endtime="20211002 15:37:16.488"/>
 </kw>
-<status status="PASS" starttime="20210930 23:27:42.484" endtime="20210930 23:27:44.919"/>
+<status status="PASS" starttime="20211002 15:37:16.448" endtime="20211002 15:37:16.488"/>
 </kw>
-<doc>Deal - T002: Validar menus superiores da tela Home</doc>
+<status status="PASS" starttime="20211002 15:37:16.447" endtime="20211002 15:37:16.488"/>
+</kw>
+<status status="PASS" starttime="20211002 15:37:16.447" endtime="20211002 15:37:16.488"/>
+</kw>
+<status status="PASS" starttime="20211002 15:37:16.446" endtime="20211002 15:37:16.488"/>
+</kw>
+<kw name="E" library="BDDpt-BR">
+<arg>Clicou no primeiro resultado</arg>
+<kw name="Run Keyword" library="BuiltIn">
+<arg>@{keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="Clicou no primeiro resultado" library="Resource">
+<kw name="Clicar no primeiro resultado" library="Google">
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${resultado}</var>
+<arg>${PRIMEIRO_RESULTADO}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20211002 15:37:16.516" level="INFO">${resultado} = Deal - Convergência de Dados e Estratégias Digitais para ...</msg>
+<status status="PASS" starttime="20211002 15:37:16.490" endtime="20211002 15:37:16.516"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Primeiro resultado apresentado é: ${resultado}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20211002 15:37:16.516" level="INFO">Primeiro resultado apresentado é: Deal - Convergência de Dados e Estratégias Digitais para ...</msg>
+<status status="PASS" starttime="20211002 15:37:16.516" endtime="20211002 15:37:16.516"/>
+</kw>
+<kw name="Set Focus To Element" library="SeleniumLibrary">
+<arg>${PRIMEIRO_RESULTADO}</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" starttime="20211002 15:37:16.516" endtime="20211002 15:37:16.534"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${PRIMEIRO_RESULTADO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211002 15:37:16.534" level="INFO">Clicking element 'xpath://*[@id="rso"]/div[1]/div/div/div[1]/a/h3'.</msg>
+<status status="PASS" starttime="20211002 15:37:16.534" endtime="20211002 15:37:20.361"/>
+</kw>
+<status status="PASS" starttime="20211002 15:37:16.490" endtime="20211002 15:37:20.362"/>
+</kw>
+<status status="PASS" starttime="20211002 15:37:16.489" endtime="20211002 15:37:20.362"/>
+</kw>
+<status status="PASS" starttime="20211002 15:37:16.489" endtime="20211002 15:37:20.362"/>
+</kw>
+<status status="PASS" starttime="20211002 15:37:16.489" endtime="20211002 15:37:20.362"/>
+</kw>
+<doc>Deal - T003: Fazer buscas no site Google</doc>
 <tag>Atual</tag>
-<status status="PASS" starttime="20210930 23:27:27.151" endtime="20210930 23:27:44.919"/>
+<status status="PASS" starttime="20211002 15:37:05.899" endtime="20211002 15:37:20.363"/>
 </test>
-<status status="PASS" starttime="20210930 23:27:16.265" endtime="20210930 23:27:44.921"/>
+<status status="PASS" starttime="20211002 15:37:05.235" endtime="20211002 15:37:20.365"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 <stat pass="1" fail="0" skip="0">Atual</stat>
 </tag>
 <suite>
-<stat pass="2" fail="0" skip="0" id="s1" name="TesteExemploDeal">TesteExemploDeal</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="TesteExemploDeal">TesteExemploDeal</stat>
 </suite>
 </statistics>
 <errors>
