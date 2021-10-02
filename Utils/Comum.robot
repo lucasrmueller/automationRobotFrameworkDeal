@@ -12,6 +12,12 @@ Abrir Navegador
     Go To  https://www.deal.com.br/
 
 
+Abrir site do Google
+    Open Browser  about:blank  ${BROWSER}
+    Maximize Browser Window  
+    Go To  https://www.google.com.br/
+
+
 Remover Caracteres Especiais
     [Arguments]  ${arg1}
     ${arg1} =  Replace String  ${arg1}  Pinto  Bento
